@@ -1,3 +1,10 @@
+## Build Notes
+after create-react-app
+yarn add semantic-ui-react
+yarn add semantic-ui-css
+yarn add react-router-dom
+yarn add react-router
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
