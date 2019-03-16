@@ -1,9 +1,21 @@
 ## Build Notes
-after create-react-app
+* run after create-react-app:
 yarn add semantic-ui-react
 yarn add semantic-ui-css
 yarn add react-router-dom
 yarn add react-router
+
+* to use a proxy:
+yarn add 'http-proxy-middleware'
+create file '/src/setupProxy.js'
+inside it = between stars
+*
+const proxy = require('http-proxy-middleware');
+
+module.exports = function(app) {
+  app.use(proxy('/api', {target: 'http://localhost:3001'}))
+}
+*
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
